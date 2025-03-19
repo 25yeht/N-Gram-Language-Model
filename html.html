@@ -1,0 +1,30 @@
+<div>
+	<h1>Paste Corpus</h1>
+	<textarea id="corpus"></textarea>
+	<textarea id="corpus-2" placeholder="Corpus 2 (optional, equal weighting as corpus 1)"></textarea>
+</div>
+<div>
+	<h1>Output</h1>
+	<textarea id="output" disabled></textarea>
+	
+</div>
+<div>
+	<div class="setting-wrapper">
+		<label for="num-grams">Number of grams</label>
+		<input type="range" id="num-grams" min="1" max="5" value="3">
+		<label for="num-grams" id="num-grams-label">3 grams</label>
+	</div>
+	<div class="setting-wrapper">
+		<label for="num-grams-to-generate">Number of grams to generate</label>
+		<input type="range" id="grams-to-generate" min="15" max="500" value="100">
+		<label for="num-grams-to-generate" id="grams-to-generate-label">100 grams</label>
+	</div>
+	<div class="setting-wrapper">
+		<label for="temperature">Temperature</label>
+		<input type="range" id="temperature" min="0" max="1" step="0.1" value="0.4">
+		<label for="temperature" id="temperature-label">0.3</label>
+	</div>
+	<div>
+		<button id="generate-btn">Generate</button>
+	</div>
+</div>
