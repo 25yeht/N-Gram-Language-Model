@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 25px;
+	
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	
+	box-sizing: border-box;
+	height: 100%;
+	
+	font-family: "PT Serif", serif;
+}
+
+body > div {
+	flex: 0.5;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	gap: 15px;
+}
+
+textarea {
+	font-family: "Noto Sans", sans-serif;
+	outline: none;
+	padding: 25px;
+	font-size: 1.1rem;
+	border-radius: 10px;
+	border: 2px solid #000;
+	max-width: 100%;
+}
+
+textarea:disabled {
+	background: transparent;
+	color: #000;
+}
+
+#output {
+	cursor: text;
+}
+
+.setting-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	
+	align-items: center;
+	margin: 18px 0;
+}
+
+#generate-btn {
+	font-family: "PT Serif", serif;
+	border: none;
+	padding: 15px;
+	font-size: 16px;
+	box-shadow: 0 5px 5px #00000033;
+	cursor: pointer;
+}
+
+#generate-btn:active {
+	box-shadow: 0 2px 5px #00000033;
+}
